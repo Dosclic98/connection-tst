@@ -5,8 +5,16 @@ public class Tester {
 	public static void main(String[] args) {
 		System.out.println("Inserire la valuta iniziale:\n 1) EURO\n"+
 				"2) DOLLARO\n 3) YEN\n 4) DRACMA\n >>");
-		float value = Input.readFloat();
+		float choice1 = Input.readFloat();
 		
-		System.out.println("Il valore inserito è: " + value);
+	}
+}
+
+class Value {
+	float val;
+	
+	public float conversion(float amount, float valext) {
+		float conv = (valext/val)*amount;
+		return conv;
 	}
 }
